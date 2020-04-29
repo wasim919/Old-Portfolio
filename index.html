@@ -1,0 +1,575 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Wasim Ishaq Khan" />
+    <meta name="author" content="Wasim Ishaq Khan" />
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+   
+    <link
+      href="https://fonts.googleapis.com/css2?family=Monoton&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+      }
+      .collapsible {
+        font-family: Oswald, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+      }
+      #education-table{
+        font-family: Oswald, sans-serif;
+            font-size: 15px;
+            font-weight: 600;
+      }
+      .card-row {
+        margin-bottom: 4px;
+        margin-top: 4px;
+      }
+      .card__date {
+        background: #4db6ac;
+        position: absolute;
+        top: 6px;
+        right: 6px;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        color: #fff;
+        text-align: center;
+        line-height: 13px;
+        font-weight: bold;
+        padding-top: 12px;
+      }
+      .card__date__year {
+        display: block;
+        font-size: 14px;
+      }
+      .card-content {
+        font-family: Oswald, sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+      }
+      h3 {
+        font-family: "Pacifico", cursive;
+        color: #40a8a7;
+      }
+      .circular--landscape {
+        display: inline-block;
+        position: relative;
+        width: 300px;
+        height: 300px;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+      .circular--landscape img {
+        width: auto;
+        height: auto;
+        margin-left: auto;
+      }
+      .content {
+        font-size: 18px;
+        font-weight: 600;
+      }
+      .parallax-container {
+        height: 300px;
+      }
+      .sticky-nav {
+        position: fixed;
+        top: 0;
+        z-index: 10;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header>
+        <nav class="nav-wrapper blue lighten-3 z-depth-0" id="top ">
+          <div class="container">
+            <a href="#!" class="center brand-logo" style="font-family: 'Monoton';">HI</a>
+            <a href="#!" class="sidenav-trigger" data-target="mobile-menu">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#projects" style="color:black; font-family: Oswald, sans-serif;font-size: 20px;font-weight:400;">Projects</a></li>
+              <li><a href="#info" style="color:black; font-family: Oswald, sans-serif;font-size: 20px;font-weight:400;">Info</a></li>
+              <li><a href="#contact" style="color:black; font-family: Oswald, sans-serif;font-size: 20px;font-weight:400;">Contact</a></li>
+              
+            </ul>
+            </div>
+        </nav>
+        <ul class="sidenav white" id="mobile-menu">
+          <li><div class="user-view">
+            <div class="background">
+              <img src="img/samurai1.jpg" class="responsive-img">
+            </div>
+            <a href="#user"><img class="circle responsive-img materialboxed" src="img/Wasim.jpeg"></a>
+            <a href="#!"><span class="name" style="color:white; font-family: Oswald, sans-serif;font-size: 15px;font-weight:300;">Wasim Ishaq Khan</span></a>
+            <a href="#contact"><span class="email" style="color:white; font-family: Oswald, sans-serif;font-size: 15px;font-weight:300;">wasimishaqkhan919@gmail.com</span></a>
+          </div></li>
+          <li class="no-padding"><a href="#top" style="color:black; font-family: Oswald, sans-serif;font-size: 15px;font-weight:300;"><i class="material-icons">vertical_align_top</i>Top</a></li>
+          <li class="no-padding"><a href="#contact" style="color:black; font-family: Oswald, sans-serif;font-size: 15px;font-weight:300;"><i class="material-icons">arrow_downward</i>Bottom</a></li>
+          <li class="no-padding"><a href="#projects" style="color:black; font-family: Oswald, sans-serif;font-size: 15px;font-weight:300;"><i class="material-icons">work</i>Projects</a></li>
+          <li class="no-padding"><a href="#info" style="color:black; font-family: Oswald, sans-serif;font-size: 15px;font-weight:300;"><i class="material-icons">info</i>Info</a></li>
+          <li class="no-padding"><a href="#contact" style="color:black; font-family: Oswald, sans-serif;font-size: 15px;font-weight:300;"><i class="material-icons">contact_mail</i>Contact</a></li>
+        </ul>
+    </header>
+
+    
+
+    <section class="container section">
+      <div class="row">
+        <div class="col s12">
+          <span
+            class="dark-text text-darken-4"
+            style="
+              font-size: 30px;
+              font-weight: 700;
+              font-family: 'Special Elite', cursive;
+            "
+            >Wasim Ishaq Khan</span
+          >
+          <br />
+          <span
+            class="grey-text text-darken-1"
+            style="
+              font-size: 15px;
+              font-weight: 400;
+              font-family: 'Abril Fatface', cursive;
+            "
+          >
+            Developer | Data Analyst | Photographer
+          </span>
+        </div>
+        <div class="col s12 m6 l6">
+          <p class="content left-align" style="font-family: Oswald, sans-serif;
+          font-size: 16px;
+          font-weight: 500;">
+            I am a B.Tech. undergrad in CSE from Indian Institute of Information
+            Technology, Sricity. I am passionately in Development and Data
+            Science. I have done various projects in both the fields. Working as
+            a Freelancer and Teaching assistant has made me proficiently skilled
+            in various libraries and frameworks such as C++, Python, Java, JavaScript,
+            Express and React.
+        </p>
+        <p class="content left-align" style="font-family: Oswald, sans-serif;
+        font-size: 17px;
+        font-weight: 500;">
+            I love to innovate new things. Throughout my journey as a programmer, I have tried to
+            innovate things that can solve practical problems and make this world a better place.
+            My motivation is a quote from the movie Revenant: "As long as you can grab a breath, you fight". 
+            When I am not on my laptop, I can be found capturing moments, reading/writing poetry.  
+          </p>
+        </div>
+        <div class="col s12 m6 l5 right-align push-l1">
+          <div class="circular--landscape valign-wrapper">
+            <img
+              src="img/Wasim.jpeg"
+              alt=""
+              class="circular--square responsive-img materialboxed"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/image.jpg" alt="" class="responsive-img" />
+      </div>
+    </div>
+
+    <section class="container section scrollspy" id="projects">
+      <div class="row">
+        <div class="container">
+          <h3 class="center" style="font-family: 'Monoton', cursive;">
+            Projects
+          </h3>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card hoverable"> 
+            <div class="card-title blue-grey lighten-4 center brown-text text-darken-3" style="font-family: Oswald, sans-serif;
+            font-size: 20px;
+            font-weight: 500;">
+              <span>Portfolio</span
+              >
+            </div>
+            <div class="card-content black-text left-align">
+              <p class="left-align">
+                - Developed a fully-responsive portfolio enlisting my projects, interests and skills using Materialize and Vanilla Javascript.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/wasim919" class="btn-floating halfway-fab btn-small hoverable" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="container col s12 m6 l6">
+          <div class="card hoverable">
+            <div class="card-title blue-grey lighten-4 center brown-text text-darken-3" style="font-family: Oswald, sans-serif;
+            font-size: 20px;
+            font-weight: 500;">
+              <span>Real Time Eye-Based System Navigation Control</span
+              >
+            </div>
+            <div class="center card-content black-text left-align">
+              <p class="left-align">
+                - This project provides a platform for differently abled people
+                for interaction with computers.
+                <br />
+                - This project makes use of eye movement and eye-blinks of the
+                user to give commands to the system.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/wasim919" class="btn-floating halfway-fab btn-small hoverable" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card hoverable">
+            <div class="card-title blue-grey lighten-4 center brown-text text-darken-3" style="font-family: Oswald, sans-serif;
+            font-size: 20px;
+            font-weight: 500;">
+              <span"
+                >Student Welfare Portal</span
+              >
+            </div>
+            <div class="center card-content black-text left-align">
+              <p class="left-align">
+                - This project involved developing a fully responsive web portal
+                to fulfill non-academic needs of the students living in hostels.
+                <br />
+                - Using the web app, the students can get their issues resolved
+                with minimal to negligible human contact.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/wasim919" class="btn-floating halfway-fab btn-small hoverable" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l6">
+          <div class="card hoverable">
+            <div class="card-title blue-grey lighten-4 center brown-text text-darken-3" style="font-family: Oswald, sans-serif;
+            font-size: 20px;
+            font-weight: 500;">
+              <span>Sentiment Analysis on Movie Reviews</span
+              >
+            </div>
+            <div class="card-content black-text left-align">
+              <p class="left-align">
+                - This project makes use of deep learning frameworks to do
+                sentiment analysis on movie reviews and classify them.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/wasim919" class="btn-floating halfway-fab btn-small hoverable" target="_blank">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m6 l7 push-l3">
+          <div class="card hoverable">
+            <div class="card-title blue-grey lighten-4 center brown-text text-darken-3" style="font-family: Oswald, sans-serif;
+            font-size: 20px;
+            font-weight: 500;">
+              <span>Machine Learning Algorithms Implemented in ANSI C</span
+              >
+            </div>
+            <div class="card-content black-text left-align">
+              <p class="left-align">
+                - This project involved the implementation of general machine
+                learning algorithms like Arti cial Neural Networks, KNN Classi
+                er and Naive Bayes Classi er using ANSI-C.
+              </p>
+            </div>
+            <div class="card-action">
+              <a href="https://github.com/wasim919" class="btn-floating halfway-fab btn-small hoverable" target="_blank">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/experience.jpg" alt="" class="responsive-img" />
+      </div>
+    </div>
+
+
+    <section class="container section scrollspy" id="experience">
+      <h3 class="center" style="font-family: 'Monoton';">
+        Experience
+      </h3>
+      <div class="row">
+        <div class="col s12 m12 l12">
+          <div class="card-container">
+            <div class="card hoverable">
+              <!-- <div class="card__date">
+                <span class="card__date__year">2018</span>
+              </div> -->
+              <div class="card-title center blue-grey lighten-3 brown-text text-darken-3" style="font-family: Oswald, sans-serif;
+              font-size: 20px;
+              font-weight: 500;">
+                <span>FreeLancer</span>
+              </div>
+              <div class="card-content">
+                - Developed Web Apps using a variety of frameworks and libraries
+                such as Django, Node, React etc. as part of freelancing.
+                <br>
+                - I have also developed a couple of Machine Learning and Deep Learning projects as far of freelancing. 
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col s12 m12 l12" style="height: 300px;">
+          <div class="card-container">
+            <div class="card hoverable">
+              <!-- <div class="card__date">
+                <span class="card__date__year">2019</span>
+              </div> -->
+              <div class="card-title center blue-grey lighten-3 brown-text text-darken-3" style="font-family: Oswald, sans-serif;
+              font-size: 20px;
+              font-weight: 500;">
+                <span>Teaching Assistant</span> 
+              </div>
+              <div class="card-content">
+                - Conducted classes, workshops and demonstrations to teach AI
+                algorithms and techniques to 200+ undergraduate students at
+                Indian Institute of Information Technology Sricity.
+                <br>
+                - My role as a Teaching Assistant lasted for a period of 4 months.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="img/formal-info.jpg" alt="" class="responsive-img">
+      </div>
+    </div>
+    
+    
+    <section class="container section scrollspy" id="info">
+      <h3 class="center" style="font-family: 'Monoton', cursive;">
+        Formal Info
+      </h3>
+      <ul class="collapsible popout">
+        <li>
+          <div class="collapsible-header"><i class="material-icons">school</i>Education</div>
+          <div class="collapsible-body">
+          <table class="highlight centered" id="education-table">
+            <thead>
+              <tr>
+                <td>B.Tech (CSE)</td>
+                <td>Indian Institute of Information Technology, Sricity</td>
+                <td>2016-2020</td>
+              </tr>
+              <tr>
+                <td>Class IX-XII (JKBOSE)</td>
+                <td>Sir Syed Memorial Higher Secondary, Parray Pora</td>
+                <td>2013-2016</td>
+              </tr>
+            </thead>
+          </table>
+          </div>
+        </li>
+        <li class="active">
+          <div class="collapsible-header"><i class="material-icons">code</i>Skills</div>
+          <div class="collapsible-body">
+            <div class="row">
+              <div class="col s12 m6 l6">
+                <blockquote style="border-left: 5px solid #00c853">
+                  - C++, Python, Java, JavaScript
+                  <br>
+                  - HTML, XML
+                  <br>
+                  - CSS, Bootstrap, Materialize
+                  <br>
+                  - Node.js, Express.js, React
+                  <br>
+                  - Django, Firebase
+                  <br> 
+                </blockquote>
+              </div>
+              <div class="col s12 m6 l6">
+                <blockquote style="border-left: 5px solid #0091ea;">
+                  - Numpy, Pandas, Keras
+                  <br>
+                  - Tensorflow
+                  <br>
+                  - Matplotlib, Seaborn
+                  <br>
+                  - Data Analysis
+                  <br>
+                  - Machine Learning, Deep Learning
+                  <br>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header"><i class="material-icons">library_books</i>Coursework</div>
+          <div class="collapsible-body">
+            <div class="row">
+              <div class="col s12 m6 l6">
+                <blockquote style="border-left: 5px solid #c62828;">
+                  - Data Structures and Algorithms
+                  <br>
+                  - Applied Software Engineering
+                  <br>
+                  - Database Management Systems
+                  <br>
+                  - Infomation Retrieval
+                  <br>
+                  - Computer Networking
+                  <br>
+                  - Machine Learning
+                </blockquote>
+              </div>
+              <div class="col s12 m6 l6">
+                <blockquote style="border-left: 5px solid #6a1b9a ">
+                  - Object Oriented Programming
+                  <br>
+                  - Theory of Computation
+                  <br>
+                  - Operating Systems
+                  <br>
+                  - Computer Organization and Architecture
+                  <br>
+                  - Applied Statistical Data Analysis
+                  <br>
+                  - Deep Learning
+                </blockquote>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="container left-align" style="width:130px;">
+        <a href="assets/wasim_resume.pdf" class="btn waves-effect waves-block waves-light" download="wasim_resume.pdf" target="_blank">
+          <i class="material-icons right">get_app</i>Resume
+        </a>
+      </div>
+    </section>
+
+    <div class="fixed-action-btn vertical">
+      <a class="btn-floating btn-large dark-grey lighten-3">
+          <i class="fa fa-globe"></i>
+      </a>
+      <ul>
+          <li><a href="https://www.facebook.com/wasimishaq.khan" class="btn-floating  blue darken-4" target="_blank"><i class="fab fa-facebook"></i></a></li>
+          <li><a href="https://twitter.com/wasim_k919" class="btn-floating cyan lighten-1" target="_blank"><i class="fab fa-twitter"></i></a></li>
+          <li><a href="https://github.com/wasim919" class="btn-floating grey darken-3" target="_blank"> <i class="fab fa-github"></i></a></li>
+          <li><a href="https://www.linkedin.com/in/wasim-ishaq-khan-47a4a4144/" class="btn-floating blue-grey lighten-1" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+          <li><a href="https://instagram.com/wasim_ikhan/" class="btn-floating red darken-2" target="_blank"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+      </div>
+
+
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="img/contact.jpg" alt="" class="responsive-img">
+        </div>
+      </div>
+
+
+    <footer class="page-footer blue-grey darken-4 scrollspy" id="contact">
+      <div class="container">
+        <h4 class="white-text" style="font-family: 'Monoton', cursive;">Connect</h4>
+        <div class="rows">
+          <div class="input-field s12 m6 l6">
+            <i class="material-icons prefix">person</i>
+            <input
+              type="text"
+              id="name"
+              class="validate"
+              style="color: white;"
+            />
+            <label for="name">Name</label>
+          </div>
+          <div class="input-field s12 m6 l6">
+            <i class="material-icons prefix">email</i>
+            <input
+              type="email"
+              class="validate"
+              id="email"
+              style="color: white;"
+            />
+            <label for="email">Email</label>
+          </div>
+          <div class="input-field s12 m6 l6">
+            <i class="material-icons prefix">message</i>
+            <input
+              type="text"
+              id="message"
+              class="materiailze-textarea"
+              style="color: white;"
+            />
+            <label for="message">Message</label>
+          </div>
+          <div class="s12">
+            <a
+              href="#"
+              id="send_to_mail"
+              class="btn btn-small left waves-effect waves-block waves-light"
+            >
+              Send
+              <i class="material-icons right">send</i>
+            </a>
+          </div>
+        </div>
+        <div class="row"></div>
+      </div>
+
+      <div
+        class="footer-copyright grey darken-4 center-align"
+        style="font-size: 13px; height: 2px;"
+      >
+        <div class="container">COPYRIGHT &copy;2020 Wasim Ishaq Khan</div>
+      </div>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
