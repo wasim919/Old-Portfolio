@@ -12,7 +12,7 @@ $(document).ready(function () {
     } else {
       $("nav").removeClass("sticky-nav");
     }
-    if ($(window).scrollTop() > 150) {
+    if ($(window).scrollTop() > 100) {
       $("sidenav").addClass("sticky-nav");
     } else {
       $("sidenav").removeClass("sticky-nav");
