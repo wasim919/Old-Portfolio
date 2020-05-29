@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+  overflow-x: hidden;
+}
+.collapsible {
+  font-family: Oswald, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+#education-table {
+  font-family: Oswald, sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.card-row {
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+.card__date {
+  background: #4db6ac;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #fff;
+  text-align: center;
+  line-height: 13px;
+  font-weight: bold;
+  padding-top: 12px;
+}
+.card__date__year {
+  display: block;
+  font-size: 14px;
+}
+.card-content {
+  font-family: Oswald, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+h3 {
+  font-family: 'Pacifico', cursive;
+  color: #40a8a7;
+}
+.circular--landscape {
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
+.circular--landscape img {
+  width: auto;
+  height: auto;
+  margin-left: auto;
+}
+.content {
+  font-size: 18px;
+  font-weight: 600;
+}
+.parallax-container {
+  height: 300px;
+}
+.sticky-nav {
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+#experience {
+  position: relative;
+  height: 100vh;
+}
+
+.carousel {
+  position: absolute;
+  top: 0;
+  height: 100%;
+}
+
+.carousel .carousel-item {
+  width: 200px;
+}
+@media (min-width: 980px) {
+  #experience {
+    position: relative;
+    height: 120vh;
+  }
+
+  .carousel {
+    position: absolute;
+    top: 0;
+    height: 100%;
+  }
+
+  .carousel .carousel-item {
+    width: 200px;
+  }
+}
+
+.carousel-item .header {
+  font-size: 1.5rem;
+  color: white !important;
+}
+.carousel-item .card-panel {
+  background-color: #654037 !important;
+}
+.carousel-item span {
+  color: white !important;
+}
+
+@media (max-width: 830px) {
+  .parallax-container {
+    display: none;
+  }
+}

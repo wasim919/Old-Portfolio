@@ -30,76 +30,8 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
     />
+    <link rel="stylesheet" href="styles.css">
     <title>Document</title>
-    <style>
-      body {
-        background-color: #f0f0f0;
-      }
-      .collapsible {
-        font-family: Oswald, sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-      }
-      #education-table{
-        font-family: Oswald, sans-serif;
-            font-size: 15px;
-            font-weight: 600;
-      }
-      .card-row {
-        margin-bottom: 4px;
-        margin-top: 4px;
-      }
-      .card__date {
-        background: #4db6ac;
-        position: absolute;
-        top: 6px;
-        right: 6px;
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        color: #fff;
-        text-align: center;
-        line-height: 13px;
-        font-weight: bold;
-        padding-top: 12px;
-      }
-      .card__date__year {
-        display: block;
-        font-size: 14px;
-      }
-      .card-content {
-        font-family: Oswald, sans-serif;
-        font-size: 16px;
-        font-weight: 500;
-      }
-      h3 {
-        font-family: "Pacifico", cursive;
-        color: #40a8a7;
-      }
-      .circular--landscape {
-        position: relative;
-        overflow: hidden;
-        border-radius: 50%;
-      }
-      .circular--landscape img {
-        width: auto;
-        height: auto;
-        margin-left: auto;
-      }
-      .content {
-        font-size: 18px;
-        font-weight: 600;
-      }
-      .parallax-container {
-        height: 300px;
-      }
-      .sticky-nav {
-        position: fixed;
-        top: 0;
-        z-index: 10;
-      }
-      
-    </style>
   </head>
   <body>
     <header>
@@ -330,52 +262,55 @@
 
 
     <section class="container section scrollspy" id="experience">
-      <h3 class="center" style="font-family: 'Monoton';">
+      <h3 class="center heading" style="font-family: 'Monoton';">
         Experience
       </h3>
-      <div class="row">
-        <div class="col s12 m12 l12">
-          <div class="card-container">
-            <div class="card hoverable">
-              <!-- <div class="card__date">
-                <span class="card__date__year">2018</span>
-              </div> -->
-              <div class="card-title center blue-grey lighten-3 brown-text text-darken-3" style="font-family: Oswald, sans-serif;
-              font-size: 20px;
-              font-weight: 500;">
-                <span>FreeLancer</span>
-              </div>
-              <div class="card-content">
-                - Developed Web Apps using a variety of frameworks and libraries
-                such as Django, Node, React etc. as part of freelancing.
-                <br>
-                - I have also developed a couple of Machine Learning and Deep Learning projects as far of freelancing. 
+      <div class="carousel">
+        <a class="carousel-item">
+          <div class="row">
+            <div class="col s12">
+              <div class="card-panel teal">
+              <h5 class="black-text header">Overview</h5>
+              <span class="black-text text-darken-4">
+                I am a Full Stack Developer. I have worked in various front-end and back-end technologies such as React,
+                Materialize, Node.js, Express.js and Django.
+              </span>
               </div>
             </div>
           </div>
-        </div>
-        <div class="col s12 m12 l12" style="height: 300px;">
-          <div class="card-container">
-            <div class="card hoverable">
-              <!-- <div class="card__date">
-                <span class="card__date__year">2019</span>
-              </div> -->
-              <div class="card-title center blue-grey lighten-3 brown-text text-darken-3" style="font-family: Oswald, sans-serif;
-              font-size: 20px;
-              font-weight: 500;">
-                <span>Teaching Assistant</span> 
+        </a>
+        <a class="carousel-item">
+          <div class="row">
+            <div class="col s12">
+              <div class="card-panel teal">
+              <h5 class="black-text header">FreeLancer</h5>
+              <span class="black-text text-darken-4">
+                - Developed Web Apps using a variety of frameworks and libraries
+                such as Django, Node, React etc. as part of freelancing.
+                <br>
+                - I have also developed Machine Learning and Deep Learning projects as part of freelancing.   
+              </span>
               </div>
-              <div class="card-content">
+            </div>
+          </div>
+        </a>
+        <a class="carousel-item">
+          <div class="row">
+            <div class="col s12">
+              <div class="card-panel teal">
+              <h5 class="black-text header">Teaching Assistant</h5>
+              <span class="black-text text-darken-4">
                 - Conducted classes, workshops and demonstrations to teach AI
                 algorithms and techniques to 200+ undergraduate students at
                 Indian Institute of Information Technology Sricity.
                 <br>
                 - My role as a Teaching Assistant lasted for a period of 4 months.
+              </span>
               </div>
             </div>
           </div>
+        </a>
         </div>
-      </div>
     </section>
 
 
